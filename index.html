@@ -12,8 +12,8 @@
         <div><a href="#Aboutme">Contacts</a></div>
         <div><a href="#Aboutme">About me</a></div>
         <div><a href="#Skills">Skills</a></div>
-        <div><a href="#Skills">Code example</a></div>
-        <div><a href="#Languages">Education</a></div>
+        <div><a href="#Codeexample">Code example</a></div>
+        <div><a href="#Education">Education</a></div>
         <div><a href="#Languages">Languages</a></div>
     </header>
     <main>
@@ -51,18 +51,20 @@
                     <dd><div class="skills-level" style="width: 40%">40%</div></dd>
                     <dt>JS</dt>
                     <dd><div class="skills-level" style="width: 10%">10%</div></dd>
+                    </dl>
             </div>
             <div class="code">
                 <h2 class="skills-heading">Code</h2>
-                <pre>
+                <pre><code>
 n = int(input())
 arr = [list(map(int,input().split())) for i in range(n)]
 minn = arr[0][0] + arr[0][1]
 for i in range(1, n):
-    if arr[i][0] + arr[i][1] <= minn:
+    if arr[i][0] + arr[i][1] &lt;= minn:
         minn = arr[i][0] + arr[i][1]
 print(minn)
-                </pre>
+                
+                </code></pre>
             </div>
         </section>
         <section class="education-lang" id="Languages">
