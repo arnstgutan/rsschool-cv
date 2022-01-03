@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+
+    background-color: rgb(253, 253, 253);
+}
+
+h2 {
+    font-size: 44px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 10px;
+    background: #242427; 
+    position: sticky; 
+    top: 0; 
+    padding-right: 50px;
+    height: 50px;
+    font: 2em Arial, sans-serif;
+    font-size: 24px;
+    text-shadow: white .5px .5px .5px;
+}
+
+.header div {
+    color: rgb(250, 240, 223);
+    margin: 0px 20px;
+    padding: 10px;
+}
+
+.header a {
+    color: rgb(250, 240, 223);
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+.header div:hover {
+    border: .1px solid wheat;
+    padding: 10px;
+    margin: 0px 19px;
+    border-radius: 20px;
+    background-color: #252544;
+}
+
+.photo-name {
+    display: grid;
+    grid-template-columns: 400px 800px;
+    grid-gap: 0px 60px;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.my-photo {
+    width: 400px;
+    border-radius: 100%;
+    margin-right: 0px;
+}
+
+.photo-name .name {
+    font-family: 'Island Moments', cursive;
+    font-size: 160px;
+    height: 230px;
+}
+
+.photo-name p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.photo-name .last-name {
+    margin-left: 100px;
+}
+
+.photo-name .description {
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    bottom: 50px;
+    font-size: 60px;
+    font-weight: 900;
+    width: max-content;
+
+}
+
+.heart span.hearticon {
+    background: url("img/heart-svgrepo-com.svg") no-repeat;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 20px;
+}
+
+.heart {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 0px;
+    border-radius: 10px;
+    vertical-align: top;
+    margin-top: 70px;
+    border: 0px solid;
+    position: relative;
+    bottom: 50px;
+    left: 180px;
+}
+
+.heart:hover span.hearticon {
+    background: url("img/heart-svgrepo-com-ON.svg") no-repeat;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 20px;
+}
+
+.heart span.hearticon.added {
+    opacity: 0;
+}
+
+.heart.added {
+    background: url("img/RED_SVG_heart.svg.png") no-repeat;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.heart .likes-number {
+    margin-left: 16px;
+    line-height: 14px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.photo-name::after {
+    display: block;
+    width:1400px;
+    content: '';
+    margin: 60px;
+    margin-top: 160px;
+    border-bottom: 3px solid #000;
+}
+
+.contacts-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: 800px 800px;*/
+    margin-top: 80px;
+    justify-items: stretch;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    grid-gap: 40px;
+    padding: 20px 40px;
+    margin-bottom: 190px;
+}
+
+.contacts, .about {
+    line-height: 36px;
+
+}
+
+.contacts-about::after {
+    display: block;
+    grid-column: 1 / -1;
+    margin-top: 160px;
+    content: '';
+    border-bottom: 3px solid #000;
+}
+
+.skills-code {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: 800px 800px;*/
+    margin-top: 80px;
+    justify-items: stretch;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    grid-gap: 40px;
+    padding: 20px 40px;
+    margin-bottom: 190px;
+}
+
+.skills, .code {
+    line-height: 36px;
+}
+
+
+.skills dd {
+    text-align: center;
+    background-color: wheat;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+dl {
+    display: block;
+    color: rgb(20, 11, 0);
+    width: 2em;
+}
+
+.skills dt {
+    text-align: center;
+    margin: 10px;   
+}
+
+
+.skills-level {
+    font-family: 'Estonia', cursive;
+    color: #ffffff;
+    background-color: #4470c4;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+
+.skills-level-ok {
+    background-color: #47bb52;
+}
+
+
+.code pre{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+    margin: 40px;
+}
+
+.skills-code::after {
+    display: block;
+    grid-column: 1 / -1;
+    margin-top: 160px;
+    content: '';
+    border-bottom: 3px solid #000;
+}
+
+
+@font-face {
+    font-family: 'Island Moments';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/islandmoments/v1/NaPBcZfVGvBdxIt7Ar0qzkXJF9TBKIk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.education-lang {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: 800px 800px;*/
+    margin-top: 80px;
+    justify-items: stretch;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    grid-gap: 40px;
+    padding: 20px 40px;
+    margin-bottom: 190px;
+}
+
+.education, .lang {
+    line-height: 36px;
+}
+
+.education-lang::after {
+    display: block;
+    grid-column: 1 / -1;
+    margin-top: 160px;
+    content: '';
+    border-bottom: 3px solid #000;
+}
