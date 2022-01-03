@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div><a href="#Aboutme">Contacts</a></div>
+        <div><a href="#Aboutme">About me</a></div>
+        <div><a href="#Skills">Skills</a></div>
+        <div><a href="#Codeexample">Code example</a></div>
+        <div><a href="#Education">Education</a></div>
+        <div><a href="#Languages">Languages</a></div>
+    </header>
+    <main>
+        <section class="photo-name">
+            <div><img src="img/IMG_20190621_103703.jpg" alt="Arnst" class="my-photo"></div>
+            <div class="name"><p>Arnst</p> <p class="last-name">Aleksandr</p></div>
+            <div>
+                <button class="heart" type="button">
+                <span class="hearticon"> </span> <span class="likes-number"> </span></button>
+            </div>
+            <div class="description">Junior full-stack developer</div>
+        </section>
+        <section class="contacts-about" id="Aboutme">
+            <div class="contacts" >
+                <h2>Contacts</h2>
+                <p><b>Home:</b>Saint petersburg</p>
+                <p><b>Phone:</b>8 XXX XXX XX 32</p>
+                <p><b>Telegram:</b>https://t.me/Arnstgutang</p>
+                <p><b>GitHub:</b>https://github.com/arnstgutan</p>
+                <p><b>Discord:</b>Alearn#8364</p>
+            </div>
+            <div class="about" >
+                <h2>About me</h2>
+                <p>Hello! I'm Aleksandr - Junior Full Stack developer. I have finished ITMO University where I got first expirience of software development. I have graduated in optical engeneering field and my first programms were about design optical systems with using python. After university I change direction of my interests and start working in field of teaching and reserching brain abilities. I have a lot of projets that I want to do in this area using my programming skills. So I very motivated to study with you!</p>
+            </div>
+        </section>
+
+        <section class="skills-code" id="Skills">
+            <div class="skills">
+                <h2 class="skills-heading">Skills</h2>
+                    <dl class="skills-table" style="width:60%">
+                    <dt>HTML</dt>
+                    <dd><div class="skills-level skills-level-ok" style="width: 60%">60%</div></dd>
+                    <dt>CSS</dt>
+                    <dd><div class="skills-level" style="width: 40%">40%</div></dd>
+                    <dt>JS</dt>
+                    <dd><div class="skills-level" style="width: 10%">10%</div></dd>
+                    </dl>
+            </div>
+            <div class="code">
+                <h2 class="skills-heading">Code</h2>
+                <pre><code>
+n = int(input())
+arr = [list(map(int,input().split())) for i in range(n)]
+minn = arr[0][0] + arr[0][1]
+for i in range(1, n):
+    if arr[i][0] + arr[i][1] &lt;= minn:
+        minn = arr[i][0] + arr[i][1]
+print(minn)
+                
+                </code></pre>
+            </div>
+        </section>
+        <section class="education-lang" id="Languages">
+            <div class="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>ITMO University</li>
+                    <li>RSScholl</li>
+                </ul>
+            </div>
+            <div class="lang">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Russian - Native</li>
+                    <li>English - Intermediate</li>
+                    <li>German - Basic</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <script src="likes.js"></script>
+</body>
+</html>
