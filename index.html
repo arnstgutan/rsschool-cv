@@ -11,12 +11,12 @@
     <header class="header">
         <nav>
             <ul>
-            <li><a href="#Contacts">Contacts</a></li>
-            <li><a href="#Aboutme">About me</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Codeexample">Code example</a></li>
-            <li><a href="#Education">Education</a></li>
-            <li><a href="#Languages">Languages</a></li>
+            <li><a href="#Contacts" class="anchor" >Contacts</a></li>
+            <li><a href="#Aboutme" class="anchor" >About me</a></li>
+            <li><a href="#Skills" class="anchor" >Skills</a></li>
+            <li><a href="#Codeexample" class="anchor" >Code example</a></li>
+            <li><a href="#Education" class="anchor" >Education</a></li>
+            <li><a href="#Languages" class="anchor" >Languages</a></li>
             </ul>
         </nav>
     </header>
@@ -53,25 +53,24 @@
                     <h2>Skills</h2>
                         <dl class="skills-table">
                         <dt>HTML</dt>
-                        <dd><div class="skills-level skills-level-ok" style="width: 60%">60%</div></dd>
+                        <dd><div class="skills-level skills-level-ok" style="width: 80%">80%</div></dd>
                         <dt>CSS</dt>
-                        <dd><div class="skills-level" style="width: 40%">40%</div></dd>
+                        <dd><div class="skills-level" style="width: 60%">60%</div></dd>
                         <dt>JS</dt>
-                        <dd><div class="skills-level" style="width: 10%">10%</div></dd>
+                        <dd><div class="skills-level" style="width: 30%">30%</div></dd>
                         </dl>
                 </section>
 
             <section class="section" id="Codeexample">
                     <h2>Code</h2>
                     <pre><code>
-    n = int(input())
-    arr = [list(map(int,input().split())) for i in range(n)]
-    minn = arr[0][0] + arr[0][1]
-    for i in range(1, n):
-        if arr[i][0] + arr[i][1] &lt;= minn:
-            minn = arr[i][0] + arr[i][1]
-    print(minn)
-                    
+const unluckyDays = year => {
+  let unlucky = 0;
+  for (x = 0; x < 12; x++) {
+    unlucky += new Date(year, x, 13).getDay() === 5 ? 1 : 0;
+  }
+  return unlucky;
+}
                     </code></pre>
             </section>
 
@@ -95,8 +94,8 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-            <div>2022</div>
-            <div class="github"><a href="https://github.com/arnstgutan"><img src="img/25231.png" width="60" alt="Git"></a></div>
+            <div class="year">2022</div>
+            <div class="github"><a href="https://github.com/arnstgutan"><img src="img/GITHUB.png" width="60" alt="Git"></a></div>
             <div class="rss"><a href="https://rs.school/"><img src="img/logo-rs.svg" width="60" alt="rss"></a></div>
         </div>
     </footer>
