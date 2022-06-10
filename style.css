@@ -86,6 +86,7 @@ ul {
 }
 
 .photo-name .last-name {
+    display: block;
     margin-left: 100px;
 }
 
