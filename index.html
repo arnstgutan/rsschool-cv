@@ -9,83 +9,96 @@
 </head>
 <body>
     <header class="header">
-        <div><a href="#Aboutme">Contacts</a></div>
-        <div><a href="#Aboutme">About me</a></div>
-        <div><a href="#Skills">Skills</a></div>
-        <div><a href="#Codeexample">Code example</a></div>
-        <div><a href="#Education">Education</a></div>
-        <div><a href="#Languages">Languages</a></div>
+        <nav>
+            <ul>
+            <li><a href="#Contacts" class="anchor" >Contacts</a></li>
+            <li><a href="#Aboutme" class="anchor" >About me</a></li>
+            <li><a href="#Skills" class="anchor" >Skills</a></li>
+            <li><a href="#Codeexample" class="anchor" >Code example</a></li>
+            <li><a href="#Education" class="anchor" >Education</a></li>
+            <li><a href="#Languages" class="anchor" >Languages</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
+    <main class="main">
         <section class="photo-name">
             <div><img src="img/IMG_20190621_103703.jpg" alt="Arnst" class="my-photo"></div>
-            <div class="name"><p>Arnst</p> <p class="last-name">Aleksandr</p></div>
+            <h1 class="name">Arnst<div class="last-name">Aleksandr</div></h1>
             <div>
                 <button class="heart" type="button">
                 <span class="hearticon"> </span> <span class="likes-number"> </span></button>
             </div>
             <div class="description">Junior full-stack developer</div>
         </section>
-        <section class="contacts-about" id="Aboutme">
-            <div class="contacts" >
-                <h2>Contacts</h2>
-                <p><b>Home:</b>Saint petersburg</p>
-                <p><b>Phone:</b>8 XXX XXX XX 32</p>
-                <p><b>Telegram:</b>https://t.me/Arnstgutang</p>
-                <p><b>GitHub:</b>https://github.com/arnstgutan</p>
-                <p><b>Discord:</b>Alearn#8364</p>
-            </div>
-            <div class="about" >
+        <div class="main-container">
+
+            <section class="section" id="Contacts">
+                    <h2>Contacts</h2>
+                    <ul>
+                    <li><b>Home:</b>Saint petersburg</li>
+                    <li><b>Phone:</b>8 XXX XXX XX 32</li>
+                    <li><b>Telegram:</b>https://t.me/Arnstgutang</li>
+                    <li><b>GitHub:</b>https://github.com/arnstgutan</li>
+                    <li><b>Discord:</b>Alearn#8364</li>
+                    </ul>
+            </section>
+
+            <section class="section" id="Aboutme">
                 <h2>About me</h2>
                 <p>Hello! I'm Aleksandr - Junior Full Stack developer. I have finished ITMO University where I got first expirience of software development. I have graduated in optical engeneering field and my first programms were about design optical systems with using python. After university I change direction of my interests and start working in field of teaching and reserching brain abilities. I have a lot of projets that I want to do in this area using my programming skills. So I very motivated to study with you!</p>
-            </div>
-        </section>
+            </section>
 
-        <section class="skills-code" id="Skills">
-            <div class="skills">
-                <h2 class="skills-heading">Skills</h2>
-                    <dl class="skills-table" style="width:60%">
-                    <dt>HTML</dt>
-                    <dd><div class="skills-level skills-level-ok" style="width: 60%">60%</div></dd>
-                    <dt>CSS</dt>
-                    <dd><div class="skills-level" style="width: 40%">40%</div></dd>
-                    <dt>JS</dt>
-                    <dd><div class="skills-level" style="width: 10%">10%</div></dd>
-                    </dl>
-            </div>
-            <div class="code">
-                <h2 class="skills-heading">Code</h2>
-                <pre><code>
-n = int(input())
-arr = [list(map(int,input().split())) for i in range(n)]
-minn = arr[0][0] + arr[0][1]
-for i in range(1, n):
-    if arr[i][0] + arr[i][1] &lt;= minn:
-        minn = arr[i][0] + arr[i][1]
-print(minn)
-                
-                </code></pre>
-            </div>
-        </section>
-        <section class="education-lang" id="Languages">
-            <div class="education">
-                <h2>Education</h2>
-                <ul>
-                    <li>ITMO University</li>
-                    <li>RSScholl</li>
-                </ul>
-            </div>
-            <div class="lang">
-                <h2>Languages</h2>
-                <ul>
-                    <li>Russian - Native</li>
-                    <li>English - Intermediate</li>
-                    <li>German - Basic</li>
-                </ul>
-            </div>
-        </section>
 
+            <section class="section" id="Skills">
+                    <h2>Skills</h2>
+                        <dl class="skills-table">
+                        <dt>HTML</dt>
+                        <dd><div class="skills-level skills-level-ok" style="width: 80%">80%</div></dd>
+                        <dt>CSS</dt>
+                        <dd><div class="skills-level" style="width: 60%">60%</div></dd>
+                        <dt>JS</dt>
+                        <dd><div class="skills-level" style="width: 30%">30%</div></dd>
+                        </dl>
+                </section>
+
+            <section class="section" id="Codeexample">
+                    <h2>Code</h2>
+                    <pre><code>
+const unluckyDays = year => {
+  let unlucky = 0;
+  for (x = 0; x < 12; x++) {
+    unlucky += new Date(year, x, 13).getDay() === 5 ? 1 : 0;
+  }
+  return unlucky;
+}
+                    </code></pre>
+            </section>
+
+            <section class="section" id="Education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>ITMO University</li>
+                        <li>RSScholl</li>
+                    </ul>
+            </section>
+
+            <section class="section" id="Languages">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>Russian - Native</li>
+                        <li>English - Intermediate</li>
+                        <li>German - Basic</li>
+                    </ul>
+            </section>
+        </div>
     </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="year">2022</div>
+            <div class="github"><a href="https://github.com/arnstgutan"><img src="img/GITHUB.png" width="60" alt="Git"></a></div>
+            <div class="rss"><a href="https://rs.school/"><img src="img/logo-rs.svg" width="60" alt="rss"></a></div>
+        </div>
+    </footer>
     <script src="likes.js"></script>
 </body>
 </html>

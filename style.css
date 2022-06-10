@@ -4,52 +4,68 @@ body {
     background-color: rgb(253, 253, 253);
 }
 
-h2 {
-    font-size: 44px;
+h1 {
+    margin: 0px;
+    font-weight: normal;
 }
 
+h2 {
+    font-size: 44px;
+    margin-top: 140px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    position: sticky; 
+    margin: 0px;
+    padding: 0px;
+
+}
+
+ul {
+    list-style: none;
+
+}
 
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
-    padding: 10px;
-    background: #242427; 
+    background: #242427;
+    z-index: 2;
     position: sticky; 
     top: 0; 
-    padding-right: 50px;
-    height: 50px;
+    /* height: 80px; */
     font: 2em Arial, sans-serif;
+    padding: 0px 0px;
     font-size: 24px;
     text-shadow: white .5px .5px .5px;
 }
 
-.header div {
-    color: rgb(250, 240, 223);
-    margin: 0px 20px;
-    padding: 10px;
+.header li {
+    color: wheat;
+    margin: 0px;
+    padding: 30px 30px;
 }
 
 .header a {
-    color: rgb(250, 240, 223);
+    color: wheat;
     margin: 0px 20px;
     text-decoration: none;
 }
 
-.header div:hover {
-    border: .1px solid wheat;
-    padding: 10px;
-    margin: 0px 19px;
-    border-radius: 20px;
-    background-color: #252544;
+.header li:hover {
+    background-color: #14141f;
 }
 
 .photo-name {
     display: grid;
     grid-template-columns: 400px 800px;
     grid-gap: 0px 60px;
-    margin-top: 80px;
+    margin-top: 150px;
     justify-content: center;
 }
 
@@ -62,7 +78,6 @@ h2 {
 .photo-name .name {
     font-family: 'Island Moments', cursive;
     font-size: 160px;
-    height: 230px;
 }
 
 .photo-name p {
@@ -77,7 +92,7 @@ h2 {
 .photo-name .description {
     font-family: 'Courier New', Courier, monospace;
     position: relative;
-    bottom: 50px;
+   /*  bottom: 50px; */
     font-size: 60px;
     font-weight: 900;
     width: max-content;
@@ -106,7 +121,7 @@ h2 {
 }
 
 .heart:hover span.hearticon {
-    background: url("img/heart-svgrepo-com-ON.svg") no-repeat;
+    background: url("img/BLACK_SVG_heart.svg.png") no-repeat;
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: left;
@@ -140,53 +155,34 @@ h2 {
     border-bottom: 3px solid #000;
 }
 
-.contacts-about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /*grid-template-columns: 800px 800px;*/
-    margin-top: 80px;
-    justify-items: stretch;
-    font-family: 'Courier New', Courier, monospace;
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
+}
+
+.section {
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #000;
     font-size: 24px;
-    grid-gap: 40px;
-    padding: 20px 40px;
-    margin-bottom: 190px;
-}
-
-.contacts, .about {
     line-height: 36px;
-
-}
-
-.contacts-about::after {
-    display: block;
-    grid-column: 1 / -1;
-    margin-top: 160px;
-    content: '';
-    border-bottom: 3px solid #000;
-}
-
-.skills-code {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /*grid-template-columns: 800px 800px;*/
-    margin-top: 80px;
-    justify-items: stretch;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
-    grid-gap: 40px;
-    padding: 20px 40px;
-    margin-bottom: 190px;
+    margin: -120px 0px;
+    padding: 240px 0px;
 }
 
-.skills, .code {
-    line-height: 36px;
+* {
+    box-sizing: border-box;
 }
 
-
-.skills dd {
+.skills-table dd {
     text-align: center;
-    background-color: wheat;
+    background-color: whitesmoke;
     border: 2px solid;
     border-radius: 20px;
 }
@@ -194,44 +190,46 @@ h2 {
 dl {
     display: block;
     color: rgb(20, 11, 0);
-    width: 2em;
 }
 
-.skills dt {
+dd {
+    margin-left: -50px;
+    margin-right: 120px;
+
+}
+
+.skills-table dt {
     text-align: center;
-    margin: 10px;   
+    margin: 20px;
+    margin-left: -50px;
+    margin-right: 120px;
 }
 
 
 .skills-level {
     font-family: 'Estonia', cursive;
     color: #ffffff;
-    background-color: #4470c4;
+    background-color: #242427;
     text-align: center;
     border-radius: 20px;
-    
-}
 
+}
 
 .skills-level-ok {
-    background-color: #47bb52;
+    background-color: #242427;
 }
 
 
-.code pre{
+.section pre{
     border-radius: 20px;
-    padding: 20px;
-    background-color: antiquewhite;
-    margin: 40px;
+    padding: 10px;
+    width: max-content;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid black;
 }
 
-.skills-code::after {
-    display: block;
-    grid-column: 1 / -1;
-    margin-top: 160px;
-    content: '';
-    border-bottom: 3px solid #000;
-}
+
 
 
 @font-face {
@@ -243,27 +241,38 @@ dl {
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.education-lang {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /*grid-template-columns: 800px 800px;*/
-    margin-top: 80px;
-    justify-items: stretch;
-    font-family: 'Courier New', Courier, monospace;
+
+.footer {
+    background: #000000;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: rgb(250, 240, 223);
     font-size: 24px;
-    grid-gap: 40px;
-    padding: 20px 40px;
-    margin-bottom: 190px;
+
 }
 
-.education, .lang {
-    line-height: 36px;
+.github {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 120px;
 }
 
-.education-lang::after {
-    display: block;
-    grid-column: 1 / -1;
-    margin-top: 160px;
-    content: '';
-    border-bottom: 3px solid #000;
+.github img {
+    width: 80px;
+}
+
+.rss img {
+    width: 100px;
+}
+
+.year {
+    font-size: 40px;
+
 }
