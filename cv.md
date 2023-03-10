@@ -18,7 +18,8 @@ Hello! I'm Aleksandr - Junior Full Stack developer. I have finished ITMO Univers
 
 - HTML/CSS
 - JavaScript \(basics\)
-- Python
+- Python/Django
+- SQL
 - Linux
 - Figma\Photoshop
 
