@@ -21,7 +21,7 @@ Hello! I'm Aleksandr - Junior Full Stack developer. I have finished ITMO Univers
 - Python/Django
 - SQL
 - Linux
-- Figma\Photoshop
+- Figma/Photoshop
 
 ### Code examle
 
